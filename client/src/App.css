@@ -1,0 +1,225 @@
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: lightgray;
+}
+button {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 2px 2px 3px;
+    margin: 7px 3px;
+}
+button:hover {
+    cursor: pointer;
+}
+/* header {
+    border-bottom: 3px double lightgray;
+    text-align: center;
+} */
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+li {
+    font-size: 26px;
+    color: gray;
+}
+h1 {
+    font-size: 42px;
+    margin: 0px;
+    text-align: center;
+    padding: 20px 0px;
+}
+form {
+    text-align: center;
+    margin: 10px;
+}
+label {
+    display: block;
+    width: 200px;
+    margin: auto;
+    font-size: 22px;
+}
+input,
+select {
+    width: 150px;
+    margin: 10px auto;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px;
+}
+
+.listItem {
+    text-align: center;
+    border-bottom: 4px double lightgray;
+    margin:40px auto;
+    width: 50%;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+
+.nav {
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    margin: auto;
+}
+
+.nav > h1 {
+    font-size: 52px;
+    flex: 1;
+    margin-right: 150px;
+    position: relative;
+    left: 40px;
+    
+    
+    
+}
+
+.link {
+    font-size: 14px;
+    text-decoration: underline;
+    color: blue;
+    margin-left: 150px;
+    justify-content: center;
+}
+
+h4{
+    
+    /* position: relative; */
+
+    
+}
+
+.tabular {
+    margin: auto;
+    border: 2px solid black;
+    padding: 3px;
+    width: 65%;
+    text-align: left;
+    border-left: black solid 2px;
+}
+  
+  .table-head {
+    background-color: darkgray lightgray; 
+  
+  }
+  
+  tr:nth-child(odd) {
+    background-color: lightgray;
+  }
+
+  th {
+      padding-left: 15px;
+      border-left: 2px solid  black;
+  }
+
+  td {
+      padding-left: 15px;
+      border-left: 2px solid black;
+      
+  }
+  
+  .buttons{
+    background-image: linear-gradient(gray, blue);
+    padding: 7px 13px;
+    color: white;
+    font-weight: bold;
+    margin: 7px;
+    border: none;
+    border-radius: 7px;
+  }
+
+
+  .link-table { 
+    text-decoration: underline;
+    color: blue;
+}
+ 
+.adopt-button {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+button {
+    box-shadow: 5px 5px #888888;
+}
+
+.detail-table, tr{
+    filter: alpha(opacity=40); 
+    opacity: 0.95;
+    border:2px black solid;
+    margin: auto;
+    border: 2px solid black;
+    padding: 3px;
+    width: 65%;
+    text-align: left;
+}
+
+
+.like {
+    background-color: green;
+    font-weight: bold;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.outer {
+    border: 2px black solid;
+    width: 90%;
+    margin:auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3px;
+    
+}
+
+.new-form {
+    display: flex;
+    grid-column: 2;
+    padding: 10px;
+    
+}
+
+.left-form {
+    flex: 1;
+    
+
+
+}
+
+.right-form {
+    
+    flex: 1;
+}
+
+.pet-button {
+    background-color: lightskyblue;
+    font-weight: bold;
+    color: white;
+    width: 150px;
+
+}
+
+
