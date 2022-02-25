@@ -1,10 +1,10 @@
-//-----mongoose.config.js file for Pet Shelter App------------
+//-----mongoose.config.js file for the Yummy Times App------------
 
 //invoke mongoose
 const mongoose = require("mongoose");
 
-//name of database for Pet Shelter App
-const dbName = "dbPetShelter";
+//name of database for Yummy Times App
+const dbName = "dbMeals";
 
 
 mongoose.connect(`mongodb://localhost/${dbName}`, {
@@ -19,4 +19,4 @@ mongoose.connect(`mongodb://localhost/${dbName}`, {
         console.log(`Connection to the ${dbName} FAILED! ERROR:`, err)
     })
 
-//-----End of ------ mongoose.config.js file for Pet Shelter App------------
+//-----End of ------ mongoose.config.js file for Yummy Times App------------

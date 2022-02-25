@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const socket = require('socket.io');
+//const socket = require('socket.io');
 
 const port = 8000;
 
@@ -48,7 +48,7 @@ app.use(cors({
 
 require("./config/mongoose.config");
 
-require("./routes/pet.routes")(app);
+require("./routes/meal.routes")(app);
 
-app.listen(port, ()=> console.log(`Successful Connection to Pet Server App on Port ${port}`))
+app.listen(port, ()=> console.log(`Successful Connection to Yummy Times Server App on Port ${port}`))
 

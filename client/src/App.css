@@ -5,6 +5,22 @@ body {
     padding: 0px;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+table {
+    color:lightgray;
+}
+
+.day {
+    background-color: #caf0f8;
+    border-radius: 20px;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -80,7 +96,7 @@ select {
     justify-content:space-around;
     margin: auto;
 }
-
+/* 
 .nav > h1 {
     font-size: 52px;
     flex: 1;
@@ -90,7 +106,7 @@ select {
     
     
     
-}
+} */
 
 .link {
     font-size: 14px;
@@ -221,5 +237,16 @@ button {
     width: 150px;
 
 }
+
+.text-div {
+    color: lightgrey;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
 
 

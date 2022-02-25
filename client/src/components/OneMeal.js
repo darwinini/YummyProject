@@ -5,10 +5,10 @@ import {Link, navigate} from '@reach/router';
 
 
 
-const OnePet = (props) =>{
+const OneMeal = (props) =>{
 
     const {id} = props;
-    const [pet, setPet] = useState({})
+    const [meal, setMeal] = useState({})
     const [counter, setCounter] = useState(0);
 
     let result = () =>{
@@ -18,12 +18,12 @@ const OnePet = (props) =>{
 
     useEffect(()=>{
         
-        axios.get(`http://localhost:8000/api/pets/${id}`)
-        // axios.get("http://localhost:8000/api/games/" + id)
+        axios.get(`http://localhost:8000/api/meals/${id}`)
+        
             .then((res)=>{
                 console.log(res);
                 console.log(res.data);
-                setPet(res.data);
+                setMeal(res.data);
 
             })
             .catch((err)=>{
@@ -36,9 +36,9 @@ const OnePet = (props) =>{
 
 
 
-    const adoptAPet = () =>{
+    const deleteMeal = () =>{
 
-        axios.delete(`http://localhost:8000/api/pets/${id}`)
+        axios.delete(`http://localhost:8000/api/meals/${id}`)
             .then((res)=>{
                 console.log(res);
                 console.log(res.data);
@@ -55,54 +55,41 @@ const OnePet = (props) =>{
         <div style={{textAlign:"center"}}>
             <div className="nav">
                 <header className="nav">
-                    <h1>Pet Shelter</h1>    
+                    <h1>Yummy Times</h1>    
                     <Link className="link" to={"/"}> back to home </Link>
                 </header>
             </div>
 
             <div className='nav'>
-                <h3> Details about: {pet.name} </h3>
+                <h3> Details about: Meal </h3>
                 <div className='no-space'>
                     <i class="fa fa-home"></i> 
-                    <button className='adopt-button' onClick={()=>adoptAPet(pet._id)}> Adopt {pet.name} </button>
+                    <button className='adopt-button' onClick={()=>deleteMeal(meal._id)}> Meal {meal.side1} </button>
                     
                 </div>
                 
             </div>
             <header>
                 <h1 style={{fontSize:"50px", borderBottom:"5px double lightgray", 
-                marginLeft:"450px", marginRight:"450px"}}>{pet.name}</h1>
+                marginLeft:"450px", marginRight:"450px"}}>{meal.side1}</h1>
                 
             </header>
-            {/* 
-            <img src={game.image} alt="game image" 
-            style={{width:"150px", height:"150px"}}/>
-            <p>{game.genre}</p>
-            <p>{game.yearReleased}</p>
-            <p>{game.rating}</p>
-            <p>{game.company}</p> */}
+            
 
             {
                 <table className='detail-table'>
                 <tr>
-                    <th>Pet Type:</th>
-                    <td> {pet.type}</td>
+                    <th>Side 1:</th>
+                    <td> {meal.side1}</td>
                 </tr>
                 <tr>
-                  <th>Description:</th>
-                  <td>{pet.description}</td>
+                  <th>Side 2:</th>
+                  <td>{meal.sid2}</td>
                 </tr>
-                <tr>
-                  <th>Skills:</th>
-                  <tr>
-                    <td>{pet.skill1}</td>
-                    <td>{pet.skill2}</td>
-                    <td>{pet.skill3}</td>
-                  </tr>
-                </tr>
+                
 
                 <div className='rating'>
-                    <button className='like' onClick={result}> Like {pet.name} </button>
+                    <button className='like' onClick={result}> Like {meal.side1} </button>
                     <p> {counter} </p> <p> like(s) </p>
                 </div>
             
@@ -119,4 +106,4 @@ const OnePet = (props) =>{
 }
 
 
-export default OnePet;
+export default OneMeal;
